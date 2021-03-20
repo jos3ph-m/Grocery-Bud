@@ -9,6 +9,11 @@ function App() {
   const [editID, setEditID] = useState(null);
   const [alert, setAlert] = useState({ show: false, msg: '', type: '' });
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('yep');
+  };
+
   return (
     <section className="section-center">
       <form className="grocery-form" onSubmit={handleSubmit}></form>
