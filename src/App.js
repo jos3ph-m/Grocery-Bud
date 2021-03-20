@@ -18,6 +18,11 @@ function App() {
     <section className="section-center">
       <form className="grocery-form" onSubmit={handleSubmit}>
         {alert.show && <Alert />}
+        <h3>grocery bud</h3>
+        <div className="form-control">
+          <input type="text" />
+          <button type="submit" className="submit-btn"></button>
+        </div>
       </form>
       <div className="grocery-container">
         <List />
