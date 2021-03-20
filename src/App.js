@@ -7,9 +7,13 @@ function App() {
   const [list, setList] = useState([]);
   const [isEditing, setIsEditing] = useState(false);
   const [editID, setEditID] = useState(null);
-  const [alert, setAlert] = useState({});
+  const [alert, setAlert] = useState({ show: false, msg: '', type: '' });
 
-  return <h2>grocery bud setup</h2>;
+  return (
+    <section className="section-center">
+      <div className="grocery-container"></div>
+    </section>
+  );
 }
 
 export default App;
