@@ -11,7 +11,10 @@ function App() {
 
   return (
     <section className="section-center">
-      <div className="grocery-container"></div>
+      <div className="grocery-container">
+        <List />
+        <button className="clear-btn">clear items</button>
+      </div>
     </section>
   );
 }
