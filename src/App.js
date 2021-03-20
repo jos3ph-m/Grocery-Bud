@@ -11,6 +11,7 @@ function App() {
 
   return (
     <section className="section-center">
+      <form className="grocery-form" onSubmit={handleSubmit}></form>
       <div className="grocery-container">
         <List />
         <button className="clear-btn">clear items</button>
