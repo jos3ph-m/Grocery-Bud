@@ -11,7 +11,8 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('yep');
+    if (!name) {
+    }
   };
 
   return (
