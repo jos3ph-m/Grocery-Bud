@@ -17,7 +17,7 @@ function App() {
       // deal with edit
     } else {
       // show alert
-      const newItem = { id: new Date().getTime().toString() };
+      const newItem = { id: new Date().getTime().toString(), title: name };
     }
   };
 
