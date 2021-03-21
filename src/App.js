@@ -36,7 +36,9 @@ function App() {
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
-          <button type="submit" className="submit-btn"></button>
+          <button type="submit" className="submit-btn">
+            submit
+          </button>
         </div>
       </form>
       <div className="grocery-container">
