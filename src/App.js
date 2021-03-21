@@ -12,7 +12,9 @@ function App() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!name) {
-      //display alert
+      // display alert
+    } else if (name && isEditing) {
+      // deal with edit
     }
   };
 
