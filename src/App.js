@@ -40,7 +40,7 @@ function App() {
         </div>
       </form>
       <div className="grocery-container">
-        <List />
+        <List items={list} />
         <button className="clear-btn">{isEditing ? 'edit' : 'submit'}</button>
       </div>
     </section>
