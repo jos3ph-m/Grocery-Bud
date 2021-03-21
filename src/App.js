@@ -17,7 +17,7 @@ function App() {
       // deal with edit
     } else {
       // show alert
-      // add item to list
+      const newItem = {};
     }
   };
 
