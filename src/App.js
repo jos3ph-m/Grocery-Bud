@@ -16,6 +16,7 @@ function App() {
     } else if (name && isEditing) {
       // deal with edit
     } else {
+      // show alert
       // add item to list
     }
   };
