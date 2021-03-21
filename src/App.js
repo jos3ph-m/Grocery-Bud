@@ -18,6 +18,8 @@ function App() {
     } else {
       // show alert
       const newItem = { id: new Date().getTime().toString(), title: name };
+      setList([...list, newItem]);
+      setName('');
     }
   };
 
