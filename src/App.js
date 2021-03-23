@@ -28,6 +28,10 @@ function App() {
           return item;
         })
       );
+      setName('');
+      setEditID(null);
+      setIsEditing(false);
+      showAlert(true, 'success', 'value changed');
     } else {
       showAlert(true, 'success', 'item added to the list');
       const newItem = { id: new Date().getTime().toString(), title: name };
@@ -57,6 +61,10 @@ function App() {
     setName(specificItem.title);
   };
 
+  useEffect(() => {
+    localStorage.setItem('list', JSON.stringify(list));
+  }, [list]);
+
   return (
     <section className="section-center">
       <form className="grocery-form" onSubmit={handleSubmit}>
@@ -79,7 +87,7 @@ function App() {
         <div className="grocery-container">
           <List items={list} removeItem={removeItem} editItem={editItem} />
           <button className="clear-btn" onClick={clearList}>
-            {isEditing ? 'edit item' : 'clear items'}
+            {isEditing ? 'editing item' : 'clear items'}
           </button>
         </div>
       )}
